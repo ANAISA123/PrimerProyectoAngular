@@ -1,0 +1,22 @@
+<div>
+    Uppercase:
+    {{name | uppercase}}
+</div>
+<div>
+    Titlecase:
+    {{name | titlecase}}
+</div>
+<div>
+    Lowercase:
+    {{apellido | lowercase}}
+</div>
+<div>
+    Date:
+    {{date | date: 'short'}}
+</div>
+
+<p>Estado de transacción {{ estado | estados }}</p>
+
+<button (click)="changeState()">Cambiar estado</button>
+<button (click)="print()">Hola</button>
+

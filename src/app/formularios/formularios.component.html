@@ -1,0 +1,19 @@
+<form [formGroup]="form">\
+    <div>
+        <input type="text" placeholder="Nombre" formControlName="name">
+        
+        <pre>
+            <code>
+                {{form.get('name') ?.value}}
+            </code>
+        </pre>
+        
+        </div>
+        <div>
+        <input type="checkbox" formControlName= "isChecked">
+        {{form.get('isChecked')?.value}}
+        </div>
+</form>
+
+
+<button [disabled]="form.get('name')?.errors">Enviar</button>
